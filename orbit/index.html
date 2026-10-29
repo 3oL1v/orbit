@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07090d"><title>ORBIT — биржа ботов</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-terminal" viewBox="0 0 24 24"><path d="M9 5v4"/><rect width="4" height="6" x="7" y="9" rx="1"/><path d="M9 15v2"/><path d="M17 3v2"/><rect width="4" height="8" x="15" y="5" rx="1"/><path d="M17 13v3"/><path d="M3 3v18h18"/></symbol>
+ <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+ <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></symbol>
+ <symbol id="i-play" viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></symbol>
+ <symbol id="i-pause" viewBox="0 0 24 24"><rect x="14" y="4" width="4" height="16" rx="1"/><rect x="6" y="4" width="4" height="16" rx="1"/></symbol>
+ <symbol id="i-step" viewBox="0 0 24 24"><path d="M5 4l10 8-10 8z"/><path d="M19 5v14"/></symbol>
+ <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+ <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></symbol>
+ <symbol id="i-bars" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+ <symbol id="i-swap" viewBox="0 0 24 24"><path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/></symbol>
+ <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+ <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+ <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></symbol>
+ <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+ <symbol id="i-reset" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
+ <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></symbol>
+ <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+ <symbol id="i-stop" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/></symbol>
+</svg>
+<div class="app">
+<aside class="sidebar">
+ <a class="brand" href="#" aria-label="ORBIT"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="16" rx="13.5" ry="6" fill="none" stroke="currentColor" stroke-width="1.6" opacity=".5" transform="rotate(-28 16 16)"/><circle cx="16" cy="16" r="4.6" fill="currentColor"/><circle cx="27.2" cy="10.2" r="2.1" class="logo-moon"/></svg><span>orbit</span></a>
+ <nav aria-label="Разделы"><button class="nav active" data-view="market"><svg class="ic"><use href="#i-terminal"/></svg><span>Торговый терминал</span></button><button class="nav" data-view="agents"><svg class="ic"><use href="#i-users"/></svg><span>Участники</span><b>10</b></button><button class="nav" data-view="rules"><svg class="ic"><use href="#i-book"/></svg><span>Правила биржи</span></button></nav>
+ <div class="market-label"><span>Рынки</span><span>5 активов</span></div>
+ <div id="coin-list"></div>
+ <div class="sidebar-bottom"><svg class="ic"><use href="#i-eye"/></svg><div>Терминал наблюдателя<small>Торгуют только боты · средства вымышленные</small></div></div>
+</aside>
+<main>
+<header><div class="breadcrumb">Лаборатория <span>/</span> <strong id="page-title">Торговый терминал</strong></div><div class="header-actions"><span class="demo-tag"><i class="pulse-dot"></i><span>Демосимуляция</span></span><button class="icon-button" id="rules-shortcut" title="Правила и ограничения" aria-label="Правила и ограничения"><svg class="ic"><use href="#i-info"/></svg></button></div></header>
+<div class="content">
+<section class="heading"><div><div class="eyebrow">Терминал наблюдателя</div><h1>Рынок ботов</h1><p>Пять активов · десять участников · один общий стакан</p></div><div class="simulation-controls"><div class="round"><span>Игровой такт</span><strong id="tick">0000</strong></div><button id="step" class="secondary" title="Один игровой такт"><svg class="ic"><use href="#i-step"/></svg>+1 такт</button><button id="play" class="primary"><svg class="ic"><use href="#i-play"/></svg>Запустить</button></div></section>
+<section class="summary">
+ <div><span class="kpi-label"><svg class="ic"><use href="#i-layers"/></svg><b class="kpi-title">Заявки ботов в стакане</b></span><strong id="orders-total">0</strong><small id="orders-sub">на всех рынках</small></div>
+ <div><span class="kpi-label"><svg class="ic"><use href="#i-bars"/></svg><b class="kpi-title">Открытый интерес</b></span><strong id="oi-total">0 <em>U</em></strong><small id="oi-sub">лонг / шорт</small></div>
+ <div><span class="kpi-label"><svg class="ic"><use href="#i-swap"/></svg><b class="kpi-title">Объём сделок</b></span><strong id="volume-total">0 <em>U</em></strong><small id="volume-sub">комиссии</small></div>
+ <div><span class="kpi-label"><svg class="ic"><use href="#i-cpu"/></svg><b class="kpi-title">Подключение моделей</b></span><strong class="connection"><i class="pulse-dot off"></i>Ожидает</strong><small>GPT и Claude ещё не подключены</small></div>
+</section>
+<section id="market-view">
+<div class="trading-grid">
+<section class="panel chart-panel">
+ <div class="asset-header"><div class="asset-title"><span id="asset-icon" class="coin-icon"></span><div><h2><span id="asset-symbol"></span><span class="perp">PERP</span></h2><span id="asset-name"></span></div></div><div class="quote"><span class="quote-label">Mark</span><strong id="price"></strong><span id="change"></span></div>
+  <div class="market-stats"><div class="market-stat"><span>Индекс</span><strong id="index"></strong></div><div class="market-stat"><span>Премия к индексу</span><strong id="premium"></strong></div><div class="market-stat"><span>Последняя сделка</span><strong id="last"></strong></div><div class="market-stat"><span>Объём</span><strong id="volume"></strong></div><div class="market-stat"><span>Funding · след. такт</span><strong id="funding"></strong></div><div class="market-stat"><span>Открытый интерес</span><strong id="oi"></strong></div></div></div>
+ <div class="chart-toolbar"><div class="toolbar-group"><div class="segmented" id="ranges" role="group" aria-label="Период графика"><button data-range="30">30 т.</button><button data-range="80" class="selected">80 т.</button><button data-range="160">Все</button></div><div class="segmented" role="group" aria-label="Тип графика"><button data-ctype="candles" class="selected">Свечи</button><button data-ctype="line">Линия</button></div></div>
+  <div class="chips" role="group" aria-label="Слои графика"><button class="chip on" data-overlay="index" aria-pressed="true"><i class="sw sw-index"></i>Индекс</button><button class="chip on" data-overlay="trades" aria-pressed="true"><i class="sw sw-trade"></i>Сделки</button><button class="chip on" data-overlay="orders" aria-pressed="true"><i class="sw sw-order"></i>Заявки ботов</button></div></div>
+ <div id="chart" class="chart" role="img" aria-label="Свечной график mark выбранного актива с объёмом сделок"><div id="chart-tip" class="chart-tip" hidden></div></div>
+ <div class="chart-footer"><span><svg class="ic"><use href="#i-clock"/></svg>Свеча = один такт по mark · ▲ покупка / ▼ продажа — сторона инициатора сделки</span><span id="asset-sector"></span></div>
+</section>
+<section class="panel orderbook">
+ <div class="panel-heading"><div class="segmented" id="book-tabs" role="tablist" aria-label="Стакан"><button data-tab="book" class="selected" role="tab">Стакан</button><button data-tab="depth" role="tab">Глубина</button><button data-tab="tape" role="tab">Сделки</button></div><span class="muted" id="book-count"></span></div>
+ <div id="tab-book" class="book-tab">
+  <div class="book-head"><span>Цена, U</span><span>Кол-во</span><span>Чьи заявки</span></div>
+  <div id="asks" class="book-side"></div>
+  <div class="book-mid"><div><span>Mark</span><strong id="book-price"></strong></div><div class="book-mid-right"><span id="spread">Спред</span><small id="book-index"></small></div></div>
+  <div id="bids" class="book-side"></div>
+  <div class="book-foot"><span><i class="key agents"></i>заявки ботов</span><span><i class="key reserve"></i>резерв поставщика ±0.2% и ±0.4% от индекса</span></div>
+ </div>
+ <div id="tab-depth" class="book-tab" hidden>
+  <div id="depth" class="depth" role="img" aria-label="Кумулятивная глубина стакана"></div>
+  <div id="depth-stats" class="depth-stats"></div>
+  <div class="book-foot"><span><i class="key bid"></i>покупка (bid), накопленный объём в U</span><span><i class="key ask"></i>продажа (ask)</span><span><i class="key agents"></i>точки — заявки ботов</span></div>
+ </div>
+ <div id="tab-tape" class="book-tab" hidden>
+  <div class="tape-head"><span>Такт</span><span>Цена</span><span>Кол-во</span><span title="Инициатор сделки → встречная сторона">Кто → кому</span></div>
+  <div id="tape" class="tape"></div>
+ </div>
+</section>
+</div>
+<div class="bottom-grid">
+<section class="panel positions-panel">
+ <div class="panel-heading"><h3>Позиции и заявки ботов <span class="count" id="positions-badge">0</span></h3><div class="toolbar-group"><div class="segmented" role="group" aria-label="Участники"><button data-who="llm" class="selected">Модели</button><button data-who="all">Все боты</button></div><div class="segmented" role="group" aria-label="Рынок"><button data-scope="market" class="selected">Этот актив</button><button data-scope="all">Все рынки</button></div></div></div>
+ <div class="table-scroll"><table><thead><tr><th>Участник</th><th>Контракт</th><th>Вход / лимит</th><th>Маржа / резерв</th><th>PnL / объём</th></tr></thead><tbody id="positions"></tbody></table></div>
+ <div id="empty-positions" class="empty"><svg class="ic"><use href="#i-inbox"/></svg><strong>У ботов здесь пусто</strong><p>Позиции и лимитные заявки появятся после решений участников.</p></div>
+</section>
+<section class="panel activity-panel">
+ <div class="panel-heading"><h3>Пульс биржи</h3><span class="live"><i class="pulse-dot"></i>Журнал</span></div>
+ <div id="activity" class="activity"></div>
+</section>
+</div>
+</section>
+<section id="agents-view" hidden><div class="section-intro"><h2>Участники эксперимента</h2><p>Сейчас торгуют программные демотрейдеры. Имена GPT и Claude обозначают будущие места подключения моделей.</p></div><div id="agent-grid" class="agent-grid"></div><div id="crowd-summary" class="panel crowd-summary" hidden></div></section>
+<section id="rules-view" hidden><div class="section-intro"><h2>Устройство ORBIT</h2><p>Работающий локальный прототип фьючерсной биржи. Все активы и средства вымышленные.</p></div><div class="rules-grid"><article class="panel rule"><h3>Механика контрактов</h3><p>Линейные бессрочные контракты в U. Плечо 1–3×, изолированная маржа. Комиссия тейкера 0.05%, мейкера 0.02%. Ликвидация при снижении капитала позиции до 5% её текущего объёма по mark; исполняется через стакан, штраф 0.5% идёт в страховой фонд.</p></article><article class="panel rule"><h3>Общий стакан</h3><p>Цены устроены как у бессрочных фьючерсов. Индекс — внешняя цена актива: воспроизводимый случайный процесс, как спотовая цена на других площадках; на него никто не влияет. Mark = индекс × (1 + премия), где премия — сглаженная разница между ценами сделок и заявок ботов на ORBIT и индексом. Если сделок и встречных заявок нет, премия затухает и mark возвращается к индексу. По mark считаются PnL, ликвидации и funding.</p><p>Стакан состоит из лимитных заявок участников. Поставщик ликвидности держит только тонкий резерв — по два уровня на расстоянии 0.2% и 0.4% от индекса: он работает как арбитражёр, возвращающий цену к индексу, и гарантирует, что закрытия и ликвидации находят контрагента. Приоритет «цена — время», при равной цене участник впереди поставщика. Всё, что забрала одна заявка, недоступно следующей. Резерв обновляется каждый такт и сдвигается против перекоса открытого интереса. Рыночный вход исполняется целиком или отклоняется; закрытие и ликвидация могут пройти частично.</p><p>Лимитная заявка резервирует маржу и комиссию, сразу берёт встречную ликвидность не хуже цены, остаток живёт 3 такта и затем снимается с возвратом резерва.</p></article><article class="panel rule"><h3>Funding и расчёты</h3><p>Раз в 4 такта: ставка = средняя премия к индексу за интервал + 0.005%, не более ±0.2%. При положительной премии лонги платят шортам, при отрицательной — наоборот; расчёт идёт через расчётного контрагента (капитал 1 000 000 U). Платёж списывается с маржи позиции. Страховой фонд — 5 000 U; если его не хватает, недостача записывается как безнадёжный долг, а не скрывается. Индекс остаётся внешним — это сознательное ограничение эксперимента: боты двигают цену ORBIT относительно индекса, но не сам индекс.</p></article><article class="panel rule"><h3>Автономность и память</h3><p>Один такт каждые 1.5 секунды при запуске. Состояние автоматически сохраняется в браузере. При закрытии страницы симуляция останавливается. Программные демотрейдеры не расходуют подписочные лимиты или API.</p></article></div><h3 class="assets-heading">Пять разных экономик</h3><div id="asset-rules" class="asset-rules"></div><div class="data-actions"><button id="export" class="secondary"><svg class="ic"><use href="#i-download"/></svg>Скачать состояние JSON</button><button id="reset" class="danger"><svg class="ic"><use href="#i-reset"/></svg>Сбросить эксперимент</button><span class="muted" id="funds"></span></div></section>
+<footer><span>ORBIT / Experimental exchange</span><span>Локальное сохранение <span id="save-status">●</span></span><span>Демо v0.3</span></footer>
+</div></main></div><script src="engine.js"></script><script src="chart.js"></script><script src="app.js"></script><script src="live.js"></script></body></html>

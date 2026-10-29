@@ -1,0 +1,15 @@
+{
+  "name": "orbit-exchange",
+  "version": "0.3.0",
+  "private": true,
+  "description": "ORBIT: fictional perpetual-futures exchange for trading bots (GPT, Claude Code and a crowd of programmatic traders)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node orbit/coordinator.js",
+    "test": "node --test",
+    "build:standalone": "python tools/build-standalone.py",
+    "build:deploy": "python tools/make-deploy.py"
+  }
+}

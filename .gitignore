@@ -1,0 +1,10 @@
+# State, logs and checkpoints of a running exchange (can be hundreds of MB)
+orbit/runtime/
+# Generated
+deploy/
+node_modules/
+*.log
+# Local secrets and tool state
+.env
+.env.*
+.railway/
