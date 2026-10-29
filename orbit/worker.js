@@ -13,7 +13,7 @@ async function execute(job,{run=cli.runProcess,signal}={}){
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'orbit-job-'));
  try{
   const schemaFile=path.join(dir,'schema.json'),outputFile=path.join(dir,'last.json');fs.writeFileSync(schemaFile,JSON.stringify(cli.schema));
-  const result=await run(job.provider==='GPT'?'codex':'claude',cli.buildArgs(job.provider,{model,schemaFile,outputFile}),{cwd:dir,input:job.prompt,timeout:Math.min(120000,Number(job.timeout)||120000),signal});
+  const result=await run(job.provider==='GPT'?'codex':'claude',cli.buildArgs(job.provider,{model,schemaFile,outputFile}),{cwd:dir,input:job.prompt,timeout:Math.min(240000,Number(job.timeout)||240000),signal});
   return {code:result.code,out:result.out,err:result.err,overflow:!!result.overflow,lastMessage:job.provider==='GPT'&&fs.existsSync(outputFile)?fs.readFileSync(outputFile,'utf8'):null};
  }finally{fs.rmSync(dir,{recursive:true,force:true});}
 }
